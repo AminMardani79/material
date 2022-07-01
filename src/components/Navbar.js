@@ -12,6 +12,8 @@ import {
 import { Language, Mail, Notifications } from "@mui/icons-material";
 import React, { useState } from "react";
 import { Box } from "@mui/system";
+// images
+import avatar from "../styles/images/avatar.jpg";
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
@@ -62,16 +64,26 @@ const Navbar = () => {
             <Notifications />
           </Badge>
           <Avatar
-            sx={{ width: "24px", height: "24px", bgcolor: "skyblue" }}
+            sx={{
+              width: "28px",
+              height: "28px",
+              bgcolor: "skyblue",
+              cursor: "pointer",
+            }}
             onClick={(e) => setOpen(true)}
-          >
-            AM
-          </Avatar>
+            src={avatar}
+          ></Avatar>
         </Icons>
         <UserBox onClick={(e) => setOpen(true)}>
-          <Avatar sx={{ width: "24px", height: "24px", bgcolor: "skyblue" }}>
-            AM
-          </Avatar>
+          <Avatar
+            sx={{
+              width: "28px",
+              height: "28px",
+              bgcolor: "skyblue",
+              cursor: "pointer",
+            }}
+            src={avatar}
+          ></Avatar>
           <Typography variant="h6" sx={{ fontSize: "15px" }}>
             Amin Mardani
           </Typography>
