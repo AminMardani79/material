@@ -54,8 +54,9 @@ const Add = () => {
         aria-describedby="modal-modal-description"
       >
         <Box
+          bgcolor={"background.default"}
+          color={"text.primary"}
           sx={{
-            bgcolor: "#ffffff",
             width: { xs: "80%", sm: "450px" },
             height: "auto",
             paddingBottom: "25px",

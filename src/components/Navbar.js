@@ -54,7 +54,7 @@ const Navbar = () => {
         </Typography>
         <Language sx={{ display: { xs: "block", sm: "none" } }} />
         <Search>
-          <InputBase placeholder="search..." />
+          <InputBase placeholder="search..." sx={{ color: "black" }} />
         </Search>
         <Icons>
           <Badge badgeContent={4} color="error">
